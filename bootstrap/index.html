@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Pessoal</title>
+
+    <!-- Bootstrap 5 (CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS do projeto (externo) -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="bg-body">
+    <!-- Conteúdo virá aqui -->
+
+    <!-- Bootstrap JS (necessário para navbar colapsável) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg border-bottom bg-body sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-semibold" href="#top">
+                <i class="fa-solid fa-code me-2"></i>Meu Portfólio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto gap-lg-1">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interesses">Interesses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+                <div class="ms-lg-3 d-flex align-items-center gap-2 py-2 py-lg-0">
+                    <span class="small text-secondary d-none d-lg-inline">Tema</span>
+                    <button id="themeToggle" class="btn btn-outline-secondary btn-sm" type="button">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Informações Básicas -->
+    <header id="top" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-lg-4 text-center">
+                    <img class="profile-img shadow-sm" src="assets/img/foto.png" alt="Foto de perfil">
+                    <div class="mt-3">
+                        <span class="badge text-bg-primary me-1">Ciência da Computação</span>
+                        <span class="badge text-bg-secondary">UFLA</span>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <h1 class="display-6 fw-semibold mb-3">
+                        Olá! Eu sou <span class="text-primary">Nome do Estudante</span>
+                    </h1>
+                    <p class="lead text-secondary mb-4">
+                        Estudante do curso de Ciência da Computação, interessado em desenvolvimento web e em aprender
+                        mais sobre tecnologias e computação.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a class="btn btn-primary" href="#projetos">
+                            <i class="fa-solid fa-diagram-project me-2"></i>Ver projetos
+                        </a>
+                        <a class="btn btn-outline-primary" href="#contato">
+                            <i class="fa-solid fa-envelope me-2"></i>Contato
+                        </a>
+                        <a class="btn btn-outline-secondary" href="https://github.com/" target="_blank">
+                            <i class="fa-brands fa-github me-2"></i>GitHub
+                        </a>
+                        <a class="btn btn-outline-secondary" href="https://www.linkedin.com/" target="_blank">
+                            <i class="fa-brands fa-linkedin me-2"></i>LinkedIn
+                        </a>
+                    </div>
+                    <hr class="my-4">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <div class="p-3 rounded-3 border bg-body-tertiary">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <i class="fa-solid fa-graduation-cap text-primary"></i>
+                                    <strong>Curso</strong>
+                                </div>
+                                <p class="mb-0 text-secondary">
+                                    Bacharelado em Ciência da Computação - Universidade Federal de Lavras (UFLA).
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="p-3 rounded-3 border bg-body-tertiary">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <i class="fa-solid fa-bullseye text-primary"></i>
+                                    <strong>Objetivo</strong>
+                                </div>
+                                <p class="mb-0 text-secondary">
+                                    Aprimorar habilidades em web (frontend e backend) e participar de projetos práticos
+                                    no semestre.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pb-5">
+        <!-- Sobre -->
+        <section id="sobre" class="py-4">
+            <div class="container">
+                <div class="mb-3">
+                    <h2 class="h4 mb-1">Sobre</h2>
+                    <p class="text-secondary mb-0">Uma breve descrição do estudante e trajetória.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-lg-7">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <p class="mb-2">
+                                    Sou estudante de Sistemas de Informação e gosto de construir aplicações web e
+                                    aprender criando projetos.
+                                </p>
+                                <p class="mb-0 text-secondary">
+                                    Nesta página, apresento minhas habilidades, interesses e projetos desenvolvidos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h3 class="h6 mb-3">Informações rápidas</h3>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-flex gap-2 mb-2">
+                                        <i class="fa-solid fa-location-dot text-primary mt-1"></i>
+                                        <div><strong>Cidade:</strong> Lavras/MG</div>
+                                    </li>
+                                    <li class="d-flex gap-2 align-items-start mb-2">
+                                        <i class="fa-solid fa-language mt-1 text-primary"></i>
+                                        <div><strong>Idiomas:</strong> Português, Inglês (intermediário), Francês
+                                            (básico)</div>
+                                    </li>
+                                    <li class="d-flex gap-2">
+                                        <i class="fa-solid fa-laptop-code text-primary mt-1"></i>
+                                        <div><strong>Área:</strong> Desenvolvimento Web</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades" class="py-4">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="h4 mb-1">Habilidades</h2>
+                    <p class="text-secondary mb-0">Tecnologias e competências.</p>
+                </div>
+                <div class="row g-4 mt-1">
+                    <div class="col-12 col-lg-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <h3 class="h6">Tecnologias</h3>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge rounded-pill text-bg-primary">HTML</span>
+                                    <span class="badge rounded-pill text-bg-primary">CSS</span>
+                                    <span class="badge rounded-pill text-bg-primary">JavaScript</span>
+                                    <span class="badge rounded-pill text-bg-secondary">Bootstrap</span>
+                                    <span class="badge rounded-pill text-bg-secondary">Git/GitHub</span>
+                                    <span class="badge rounded-pill text-bg-secondary">Python</span>
+                                    <span class="badge rounded-pill text-bg-secondary">Django</span>
+                                </div>
+                                <hr>
+                                <h3 class="h6">Competências</h3>
+                                <ul class="mb-0">
+                                    <li>Construção de páginas responsivas</li>
+                                    <li>Manipulação do DOM e eventos</li>
+                                    <li>Organização de projetos e versionamento</li>
+                                    <li>Boas práticas de legibilidade de código</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <h3 class="h6">Nível de familiaridade (exemplo)</h3>
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <span>HTML</span><span class="text-secondary small">Intermediário</span>
+                                    </div>
+                                    <div class="progress" role="progressbar" aria-label="HTML" aria-valuenow="70"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <span>CSS</span><span class="text-secondary small">Básico-Intermediário</span>
+                                    </div>
+                                    <div class="progress" role="progressbar" aria-label="CSS" aria-valuenow="55"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 55%"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-0">
+                                    <div class="d-flex justify-content-between">
+                                        <span>JavaScript</span><span class="text-secondary small">Intermediário</span>
+                                    </div>
+                                    <div class="progress" role="progressbar" aria-label="JavaScript" aria-valuenow="65"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section id="projetos" class="py-4">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="h4 mb-1">Projetos</h2>
+                    <p class="text-secondary mb-0">Alguns trabalhos já desenvolvidos.</p>
+                </div>
+                <div class="row g-4 mt-1">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex align-items-start justify-content-between gap-2">
+                                    <h3 class="h6 mb-1">Jogo da Velha</h3>
+                                    <span class="badge text-bg-secondary">HTML</span>
+                                    <span class="badge text-bg-secondary">CSS</span>
+                                    <span class="badge text-bg-secondary">JavaScript</span>
+                                </div>
+                                <p class="text-secondary small">
+                                    Implementação do jogo com verificação de vitória e reinício.
+                                </p>
+                                <ul class="small mb-4">
+                                    <li>Matriz</li>
+                                    <li>Manipulação do DOM</li>
+                                    <li>Animação de personagens</li>
+                                </ul>
+                                <div class="mt-auto d-flex gap-2">
+                                    <a class="btn btn-sm btn-outline-primary" href="#" target="_blank" rel="noreferrer">
+                                        <i class="fa-brands fa-github me-1"></i>Repositório
+                                    </a>
+                                    <a class="btn btn-sm btn-primary" href="#" target="_blank" rel="noreferrer">
+                                        <i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex align-items-start justify-content-between gap-2">
+                                    <h3 class="h6 mb-1">Página Pessoal</h3>
+                                    <span class="badge text-bg-secondary">HTML</span>
+                                    <span class="badge text-bg-secondary">Bootstrap</span>
+                                    <span class="badge text-bg-secondary">FontAwesome</span>
+                                </div>
+                                <p class="text-secondary small">
+                                    Implementação de página pessoal com seções e navegação.
+                                </p>
+                                <ul class="small mb-4">
+                                    <li>Classes do Bootstrap</li>
+                                    <li>Grid do Bootstrap</li>
+                                    <li>Componentes (cards, navbar)</li>
+                                </ul>
+                                <div class="mt-auto d-flex gap-2">
+                                    <a class="btn btn-sm btn-outline-primary" href="#" target="_blank" rel="noreferrer">
+                                        <i class="fa-brands fa-github me-1"></i>Repositório
+                                    </a>
+                                    <a class="btn btn-sm btn-primary" href="#" target="_blank" rel="noreferrer">
+                                        <i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body d-flex flex-column">
+                                <div class="d-flex align-items-start justify-content-between gap-2">
+                                    <h3 class="h6 mb-1">Calculadora Web</h3>
+                                    <span class="badge text-bg-secondary">Frontend</span>
+                                </div>
+                                <p class="text-secondary small">
+                                    Calculadora com operações básicas e interface responsiva.
+                                </p>
+                                <ul class="small mb-4">
+                                    <li>HTML + CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Eventos e DOM</li>
+                                </ul>
+                                <div class="mt-auto d-flex gap-2">
+                                    <a class="btn btn-sm btn-outline-primary" href="#" target="_blank" rel="noreferrer">
+                                        <i class="fa-brands fa-github me-1"></i>Repositório
+                                    </a>
+                                    <a class="btn btn-sm btn-primary" href="#" target="_blank" rel="noreferrer">
+                                        <i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interesses -->
+        <section id="interesses" class="py-4">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="h4 mb-1">Interesses</h2>
+                    <p class="text-secondary mb-0">Áreas que eu gosto de estudar/pesquisar.</p>
+                </div>
+                <div class="row g-4 mt-1">
+                    <div class="col-12 col-lg-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <ul class="mb-0">
+                                    <li>Desenvolvimento Web (frontend e backend)</li>
+                                    <li>Banco de Dados e modelagem</li>
+                                    <li>Algoritmos e estruturas de dados</li>
+                                    <li>Engenharia de Software</li>
+                                    <li>Dados e visualização</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <h3 class="h6">Atividades</h3>
+                                <p class="text-secondary mb-2">
+                                    Participo de projetos acadêmicos e gosto de aprender criando coisas.
+                                </p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge text-bg-light border"><i
+                                            class="fa-solid fa-book me-1"></i>Estudos</span>
+                                    <span class="badge text-bg-light border"><i
+                                            class="fa-solid fa-people-group me-1"></i>Trabalho em equipe</span>
+                                    <span class="badge text-bg-light border"><i
+                                            class="fa-solid fa-terminal me-1"></i>Projetos práticos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="py-4">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="h4 mb-1">Contato</h2>
+                    <p class="text-secondary mb-0">Como falar comigo.</p>
+                </div>
+                <div class="row g-4 mt-1">
+                    <div class="col-12 col-lg-6">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-flex gap-2 align-items-center mb-2">
+                                        <i class="fa-solid fa-envelope text-primary"></i>
+                                        <span>email@exemplo.com</span>
+                                    </li>
+                                    <li class="d-flex gap-2 align-items-center mb-2">
+                                        <i class="fa-brands fa-github text-primary"></i>
+                                        <a class="link-underline link-underline-opacity-0" href="https://github.com/"
+                                            target="_blank" rel="noreferrer">
+                                            github.com/seu-usuario
+                                        </a>
+                                    </li>
+                                    <li class="d-flex gap-2 align-items-center">
+                                        <i class="fa-brands fa-linkedin text-primary"></i>
+                                        <a class="link-underline link-underline-opacity-0"
+                                            href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+                                            linkedin.com/in/seu-usuario
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-flex gap-2 align-items-center mb-2">
+                                        <i class="fa-brands fa-instagram text-primary"></i>
+                                        <a class="link-underline link-underline-opacity-0" href="https://instagram.com/"
+                                            target="_blank" rel="noreferrer">
+                                            instagram.com/seu-usuario
+                                        </a>
+                                    </li>
+                                    <li class="d-flex gap-2 align-items-center mb-2">
+                                        <i class="fa-brands fa-facebook text-primary"></i>
+                                        <a class="link-underline link-underline-opacity-0" href="https://facebook.com/"
+                                            target="_blank" rel="noreferrer">
+                                            facebook.com/seu-usuario
+                                        </a>
+                                    </li>
+                                    <li class="d-flex gap-2 align-items-center">
+                                        <i class="fa-brands fa-youtube text-primary"></i>
+                                        <a class="link-underline link-underline-opacity-0"
+                                            href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+                                            youtube.com/seu-usuario
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé da Página -->
+    <footer class="border-top py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+            <small class="text-secondary">© <span id="year"></span> Página Pessoal — Felipe Crisóstomo</small>
+            <small class="text-secondary">Feito com HTML + Bootstrap + um pouco de CSS/JS</small>
+        </div>
+    </footer>
+
+    <!-- JS do projeto -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
