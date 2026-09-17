@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Pessoal</title>
+
+    <!-- Foundation CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css">
+
+    <!-- Font Awesome (Ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar Mobile (Title Bar) -->
+    <div class="title-bar" data-responsive-toggle="navContent" data-hide-for="large">
+        <button class="menu-icon" type="button" data-toggle="navContent"></button>
+        <div class="title-bar-title fw-semibold">
+            <i class="fa-solid fa-code me-1"></i> Meu Portfólio
+        </div>
+    </div>
+
+    <!-- Navbar Desktop -->
+    <div class="top-bar border-bottom sticky-top" id="navContent">
+        <div class="grid-container d-flex justify-content-between align-items-center" style="width: 100%;">
+            <div class="top-bar-left show-for-large">
+                <a class="fw-semibold text-primary" href="#top" style="text-decoration: none; font-size: 1.2rem;">
+                    <i class="fa-solid fa-code me-1"></i>Meu Portfólio
+                </a>
+            </div>
+            <div class="top-bar-right d-flex flex-wrap align-items-center">
+                <ul class="dropdown menu vertical large-horizontal" data-dropdown-menu>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#interesses">Interesses</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="ms-lg-3 d-flex align-items-center gap-2 py-2 py-lg-0">
+                    <span class="small text-secondary show-for-large">Tema</span>
+                    <button id="themeToggle" class="button hollow secondary small mb-0" type="button">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="top" class="py-5">
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x align-middle g-4">
+                <div class="cell small-12 large-4 text-center">
+                    <img class="profile-img shadow-sm" src="assets/img/foto.png" alt="Foto de perfil">
+                    <div class="mt-3">
+                        <span class="label primary rounded-3 border">Ciência da Computação</span>
+                        <span class="label secondary rounded-3 border">UFLA</span>
+                    </div>
+                </div>
+                <div class="cell small-12 large-8">
+                    <h1 class="display-6 fw-semibold mb-3">
+                        Eai! Eu sou <span class="text-primary">Felipe Crisóstomo</span>
+                    </h1>
+                    <p class="lead text-secondary mb-4">
+                        Estudante do curso de Ciência da Computação, interessado em desenvolvimento web e em aprender
+                        mais sobre tecnologias e computação.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a class="button primary rounded-3 border" href="#projetos">
+                            <i class="fa-solid fa-diagram-project me-2"></i>Ver projetos
+                        </a>
+                        <a class="button hollow primary rounded-3 border" href="#contato">
+                            <i class="fa-solid fa-envelope me-2"></i>Contato
+                        </a>
+                        <a class="button hollow secondary rounded-3 border" href="https://github.com/Nobulipster"
+                            target="_blank">
+                            <i class="fa-brands fa-github me-2"></i>GitHub
+                        </a>
+                        <a class="button hollow secondary rounded-3 border"
+                            href="https://www.linkedin.com/in/felipe-crisóstomo-982b1b161/" target="_blank">
+                            <i class="fa-brands fa-linkedin me-2"></i>LinkedIn
+                        </a>
+                    </div>
+                    <hr class="my-4">
+                    <div class="grid-x grid-margin-x">
+                        <div class="cell small-12 medium-6 mb-3">
+                            <div class="p-3 rounded-3 border bg-body-tertiary">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <i class="fa-solid fa-graduation-cap text-primary"></i>
+                                    <strong>Curso</strong>
+                                </div>
+                                <p class="mb-0 text-secondary">
+                                    Bacharelado em Ciência da Computação - Universidade Federal de Lavras (UFLA).
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cell small-12 medium-6 mb-3">
+                            <div class="p-3 rounded-3 border bg-body-tertiary">
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <i class="fa-solid fa-bullseye text-primary"></i>
+                                    <strong>Objetivo</strong>
+                                </div>
+                                <p class="mb-0 text-secondary">
+                                    Me tornar um profissional competente e referência no meu modo de trabalhar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pb-5">
+        <!-- Sobre -->
+        <section id="sobre" class="py-4">
+            <div class="grid-container">
+                <div class="mb-3">
+                    <h2 class="h4 mb-1">Sobre</h2>
+                    <p class="text-secondary mb-0">Aqui está uma breve descrição da minha trajetória.</p>
+                </div>
+                <div class="grid-x grid-margin-x">
+                    <div class="cell small-12 large-7 mb-3">
+                        <div class="card shadow-sm h-100 rounded-3 border">
+                            <div class="card-section">
+                                <p class="mb-3">
+                                    Sou estudante de Ciência da Computação e gosto de ser criativo para criar
+                                    e desenvolver cada projeto que estou envolvido. Sou apaixonado por jogos,
+                                    desde os de tabuleiro até os digitais, eles são minha paixão inerente, me
+                                    ajudando a bolar ideias criativas e interessantes.
+                                </p>
+                                <p class="mb-0 text-secondary">
+                                    Nesta página, apresento minhas habilidades, interesses e projetos desenvolvidos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell small-12 large-5 mb-3">
+                        <div class="card shadow-sm h-100 rounded-3 border">
+                            <div class="card-section">
+                                <h3 class="h6 mb-3 fw-semibold">Informações rápidas</h3>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-flex gap-2 mb-2">
+                                        <i class="fa-solid fa-location-dot text-primary mt-1"></i>
+                                        <div><strong>Cidade:</strong> Lavras/MG</div>
+                                    </li>
+                                    <li class="d-flex gap-2 align-items-start mb-2">
+                                        <i class="fa-solid fa-language mt-1 text-primary"></i>
+                                        <div><strong>Idiomas:</strong> Português, Inglês (intermediário), Francês
+                                            (básico)</div>
+                                    </li>
+                                    <li class="d-flex gap-2">
+                                        <i class="fa-solid fa-laptop-code text-primary mt-1"></i>
+                                        <div><strong>Área:</strong> Desenvolvimento Web</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades" class="py-4">
+            <div class="grid-container">
+                <div class="section-title mb-3">
+                    <h2 class="h4 mb-1">Habilidades</h2>
+                    <p class="text-secondary mb-0">Tecnologias e competências.</p>
+                </div>
+                <div class="grid-x grid-margin-x mt-1">
+                    <div class="cell small-12 large-6 mb-3">
+                        <div class="card shadow-sm h-100 rounded-3 border">
+                            <div class="card-section">
+                                <h3 class="h6 fw-semibold">Tecnologias</h3>
+                                <div class="d-flex flex-wrap gap-2 mb-3 mt-2">
+                                    <span class="badge primary">HTML</span>
+                                    <span class="badge primary">CSS</span>
+                                    <span class="badge primary">JavaScript</span>
+                                    <span class="badge secondary">React</span>
+                                    <span class="badge secondary">Foundation</span>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge primary">Java</span>
+                                    <span class="badge primary">C++</span>
+                                    <span class="badge secondary">MySQL</span>
+                                    <span class="badge secondary">Godot</span>
+                                    <span class="badge secondary">Git/GitHub</span>
+                                </div>
+                                <hr>
+                                <h3 class="h6 fw-semibold">Competências</h3>
+                                <ul class="mb-0 mt-2">
+                                    <li>Criatividade em resolução de problemas</li>
+                                    <li>Construção de páginas responsivas</li>
+                                    <li>Manipulação do DOM e eventos</li>
+                                    <li>Organização de projetos e versionamento</li>
+                                    <li>Boas práticas de legibilidade de código</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell small-12 large-6 mb-3">
+                        <div class="card shadow-sm h-100 rounded-3 border">
+                            <div class="card-section">
+                                <h3 class="h6 mb-3 fw-semibold">Nível de familiaridade</h3>
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span>HTML</span><span
+                                            class="text-secondary small">Intermediário-Avançado</span>
+                                    </div>
+                                    <div class="progress rounded-3 border" role="progressbar" aria-valuenow="80"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-meter rounded-3 border" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span>CSS</span><span class="text-secondary small">Básico-Intermediário</span>
+                                    </div>
+                                    <div class="progress rounded-3 border" role="progressbar" aria-valuenow="50"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-meter rounded-3 border" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span>JavaScript</span><span class="text-secondary small">Intermediário</span>
+                                    </div>
+                                    <div class="progress rounded-3 border" role="progressbar" aria-valuenow="65"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-meter rounded-3 border" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span>Java</span><span class="text-secondary small">Intermediário</span>
+                                    </div>
+                                    <div class="progress rounded-3 border" role="progressbar" aria-valuenow="60"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-meter rounded-3 border" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-0">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span>C++</span><span class="text-secondary small">Básico-Intermediário</span>
+                                    </div>
+                                    <div class="progress rounded-3 border" role="progressbar" aria-valuenow="45"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-meter rounded-3 border" style="width: 45%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section id="projetos" class="py-4">
+            <div class="grid-container">
+                <div class="section-title mb-3">
+                    <h2 class="h4 mb-1">Projetos</h2>
+                    <p class="text-secondary mb-0">Alguns trabalhos já desenvolvidos.</p>
+                </div>
+                <div class="grid-x grid-margin-x mt-1">
+                    <div class="cell small-12 medium-6 large-4 mb-3 d-flex">
+                        <div class="card shadow-sm h-100 flex-column w-100 rounded-3 border">
+                            <div class="card-section d-flex flex-column h-100 ">
+                                <div class="d-flex align-items-start justify-content-between gap-2 mb-2">
+                                    <h3 class="h6 mb-0 fw-semibold">Jogo das Poções</h3>
+                                    <div>
+                                        <span class="badge secondary">HTML</span>
+                                        <span class="badge secondary">CSS</span>
+                                        <span class="badge secondary">JS</span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary small">
+                                    Implementação do jogo com verificação de vitória e reinício.
+                                </p>
+                                <ul class="small mb-4">
+                                    <li>Matriz</li>
+                                    <li>Manipulação do DOM</li>
+                                    <li>Animação de modal</li>
+                                </ul>
+                                <div class="mt-auto d-flex gap-2 ">
+                                    <a class="button hollow primary small mb-0 rounded-3 border"
+                                        href="https://github.com/Nobulipster/jogo-das-pocoes" target="_blank">
+                                        <i class="fa-brands fa-github me-1"></i>Repositório
+                                    </a>
+                                    <a class="button primary small mb-0 rounded-3 border"
+                                        href="https://nobulipster.github.io/jogo-das-pocoes/page/" target="_blank">
+                                        <i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell small-12 medium-6 large-4 mb-3 d-flex">
+                        <div class="card shadow-sm h-100 flex-column w-100 rounded-3 border">
+                            <div class="card-section d-flex flex-column h-100">
+                                <div class="d-flex align-items-start justify-content-between gap-2 mb-2">
+                                    <h3 class="h6 mb-0 fw-semibold">Portfólio Web</h3>
+                                    <div>
+                                        <span class="badge secondary">Foundation</span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary small">
+                                    Implementação de página pessoal com seções e navegação.
+                                </p>
+                                <ul class="small mb-4">
+                                    <li>Classes do Bootstrap</li>
+                                    <li>Grid do Bootstrap</li>
+                                    <li>Componentes (cards, navbar)</li>
+                                </ul>
+                                <div class="mt-auto d-flex gap-2">
+                                    <a class="button hollow primary small mb-0 rounded-3 border"
+                                        href="https://github.com/Nobulipster/Portfolio-Web" target="_blank">
+                                        <i class="fa-brands fa-github me-1"></i>Repositório
+                                    </a>
+                                    <a class="button primary small mb-0 rounded-3 border" href="#" target="_blank">
+                                        <i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Página
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell small-12 medium-6 large-4 mb-3 d-flex">
+                        <div class="card shadow-sm h-100 flex-column w-100 rounded-3 border">
+                            <div class="card-section d-flex flex-column h-100">
+                                <div class="d-flex align-items-start justify-content-between gap-2 mb-2">
+                                    <h3 class="h6 mb-0 fw-semibold">Gerador de NPC Aleatório</h3>
+                                    <div>
+                                        <span class="badge secondary">Backend</span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary small">
+                                    Gerador com criação personalizável de características de personagens.
+                                </p>
+                                <ul class="small mb-4">
+                                    <li>Java</li>
+                                </ul>
+                                <div class="mt-auto d-flex gap-2">
+                                    <a class="button hollow primary small mb-0 rounded-3 border"
+                                        href="https://github.com/Nobulipster/Criador_NPC_Aleatorio" target="_blank">
+                                        <i class="fa-brands fa-github me-1"></i>Repositório
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interesses -->
+        <section id="interesses" class="py-4">
+            <div class="grid-container">
+                <div class="section-title mb-3">
+                    <h2 class="h4 mb-1">Interesses</h2>
+                    <p class="text-secondary mb-0">Áreas que eu gosto de estudar/pesquisar.</p>
+                </div>
+                <div class="grid-x grid-margin-x mt-1">
+                    <div class="cell small-12 large-6 mb-3">
+                        <div class="card shadow-sm h-100 rounded-3 border">
+                            <div class="card-section">
+                                <ul class="mb-0">
+                                    <li>Desenvolvimento Web (frontend e backend)</li>
+                                    <li>Análise de Dados</li>
+                                    <li>Engenharia de Software</li>
+                                    <li>Game Development</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell small-12 large-6 mb-3">
+                        <div class="card shadow-sm h-100 rounded-3 border">
+                            <div class="card-section">
+                                <h3 class="h6 fw-semibold">Atividades</h3>
+                                <p class="text-secondary mb-3">
+                                    Participo de projetos acadêmicos e gosto de aprender criando coisas.
+                                </p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge border" style="background: transparent; color: inherit;">
+                                        <i class="fa-solid fa-book me-1"></i>Estudos
+                                    </span>
+                                    <span class="badge border" style="background: transparent; color: inherit;">
+                                        <i class="fa-solid fa-people-group me-1"></i>Trabalho em equipe
+                                    </span>
+                                    <span class="badge border" style="background: transparent; color: inherit;">
+                                        <i class="fa-solid fa-terminal me-1"></i>Projetos práticos
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="py-4">
+            <div class="grid-container">
+                <div class="section-title mb-3">
+                    <h2 class="h4 mb-1">Contato</h2>
+                    <p class="text-secondary mb-0">Como falar comigo.</p>
+                </div>
+                <div class="grid-x grid-margin-x mt-1">
+                    <div class="cell small-12 large-6 mb-3">
+                        <div class="card shadow-sm rounded-3 border">
+                            <div class="card-section">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-flex justify-content-center gap-2 align-items-center mb-2">
+                                        <i class="fa-solid fa-envelope text-primary"></i>
+                                        <span>felipecrisos12@gmail.com</span>
+                                    </li>
+                                    <li class="d-flex justify-content-center gap-2 align-items-center">
+                                        <i class="fa-brands fa-linkedin text-primary"></i>
+                                        <a href="https://www.linkedin.com/in/felipe-crisóstomo-982b1b161/" target="_blank" rel="noreferrer" style="text-decoration: none;">
+                                            linkedin.com/in/felipe-crisóstomo
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell small-12 large-6 mb-3">
+                        <div class="card shadow-sm rounded-3 border">
+                            <div class="card-section">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-flex justify-content-center gap-2 align-items-center mb-2">
+                                        <i class="fa-brands fa-github text-primary"></i>
+                                        <a href="https://github.com/Nobulipster" target="_blank" rel="noreferrer" style="text-decoration: none;">
+                                            github.com/Nobulipster
+                                        </a>
+                                    </li>
+                                    <li class="d-flex justify-content-center gap-2 align-items-center">
+                                        <i class="fa-brands fa-instagram text-primary"></i>
+                                        <a href="https://www.instagram.com/felipe_crissos?stkn=eXVuN2t2OHJodDdu" target="_blank" rel="noreferrer" style="text-decoration: none;">
+                                            instagram.com/felipe_crissos
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="border-top py-4">
+        <div class="grid-container d-flex flex-column flex-md-row justify-content-between gap-2">
+            <small class="text-secondary">&copy; <span id="year"></span> Página Pessoal – Felipe Crisóstomo</small>
+            <small class="text-secondary">Feito com: HTML, Foundation, CSS e JS</small>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/js/foundation.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
